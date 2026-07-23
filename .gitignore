@@ -1,0 +1,41 @@
+# Built artifacts
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Files for the ART pipeline
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+[Bb]uild/
+**/build/
+**/[Bb]uild/
+
+# Gradle files
+.gradle/
+**/local.properties
+
+# Android Studio Log files
+captures/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.ipr
+*.iws
+**/.idea/
+**/*.iml
+
+# Windows OS files
+[Dd]esktop.ini
+[Tt]humbs.db
+
+# Ignored directories
+archives/

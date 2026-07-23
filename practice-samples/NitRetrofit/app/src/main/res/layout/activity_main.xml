@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="80dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Name:"
+                android:gravity="right"/>
+            <EditText
+                android:id="@+id/name"
+                android:hint="In put your name"
+                android:gravity="left"
+                android:text="Jerry"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Surname:"
+                android:gravity="right"/>
+            <EditText
+                android:id="@+id/surname"
+                android:hint="Input your surname"
+                android:gravity="left"
+                android:text="surname"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="ethnic:"
+                android:gravity="right"/>
+            <EditText
+                android:id="@+id/ethnic"
+                android:hint="Input your ethnic."
+                android:gravity="left"
+                android:text="ethnic"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Date of birth:"
+                android:gravity="right"/>
+            <EditText
+                android:id="@+id/dob"
+                android:hint="Input your date of birth."
+                android:gravity="left"
+                android:text="Date of birth"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="phone number:"
+                android:gravity="right"/>
+            <EditText
+                android:id="@+id/phone"
+                android:hint="Input your phone."
+                android:gravity="left"
+                android:text="phone"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="email:"
+                android:gravity="right"/>
+            <EditText
+                android:id="@+id/email"
+                android:hint="Input your email."
+                android:gravity="left"
+                android:text="email"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="social:"
+                android:gravity="right"/>
+            <EditText
+                android:id="@+id/social"
+                android:hint="Input your social."
+                android:gravity="left"
+                android:text="social"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/retrofit_register_button"
+                android:text="Register"
+                android:layout_span="2"
+                android:textAllCaps="false"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/retrofit_get_by_name_button"
+                android:text="Get User By Name"
+                android:layout_span="2"
+                android:textAllCaps="false"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/retrofit_get_all_user_button"
+                android:text="Get All User List"
+                android:layout_span="2"
+                android:textAllCaps="false"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/retrofit_user_list_view"
+        android:divider="@android:color/holo_green_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:dividerHeight="3dp"
+        android:choiceMode="singleChoice" />
+</LinearLayout>

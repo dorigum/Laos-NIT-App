@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#005BB0"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginTop="76dp"
+        android:orientation="horizontal">
+        <!--android:layout_toEndOf="@+id/editText2"-->
+
+        <!--join 버튼-->
+
+
+        <Button
+            android:id="@+id/JOIN_button"
+            style="?metaButtonBarButtonStyle"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="JOIN"
+            android:textSize="20dp"
+            android:background="#ffffff"
+            tools:layout_editor_absoluteX="280dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </LinearLayout>
+
+    <!--menu 버튼-->
+
+    <!--첫번째 메뉴버튼 레이아웃-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/editText2"
+        android:orientation="horizontal">
+
+        <!--about us 버튼-->
+        <ImageButton
+            android:id="@+id/about_us"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/about_us"
+            tools:ignore="ContentDescription" />
+
+        <!--it tips 버튼-->
+        <ImageButton
+            android:id="@+id/it_tips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/it_tips"
+            tools:ignore="ContentDescription" />
+
+        <!--korea dbd 버튼-->
+        <ImageButton
+            android:id="@+id/korea_dbd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/korea_dbd"
+            tools:ignore="ContentDescription" />
+
+
+
+    </LinearLayout>
+
+    <!--두번째 메뉴버튼 레이아웃-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="190dp"
+        android:layout_below="@+id/editText2"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/young_idea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/young_idea"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/love_life"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/love_life"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/contact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/contact"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <!--세번째 메뉴버튼 레이아웃-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="310dp"
+        android:layout_below="@+id/editText2"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/offers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/offers"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/cooperation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cooperation"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/downloads"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/downloads"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="257dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="177dp"
+        android:ems="10"
+        android:hint="To search, type and hit enter"
+        android:inputType="text" />
+
+</RelativeLayout>
